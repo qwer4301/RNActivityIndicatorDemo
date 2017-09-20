@@ -97,5 +97,3 @@ AppRegistry.registerComponent('RNActivityIndicatorDemo', () => RNActivityIndicat
 ```
 
 看代码，我们首先就在state中加了一个变量animating，用来控制指示器的显示与隐藏，初始是显示的。然后看我们的界面元素部分，即render中的部分，除了最外面一层view外，最上面就是一个TouchableOpacity，onPress属性指向了一个响应方法，即showOrHide方法，在这个方法中我们可以看到，很简单地实现了一个通过animating变量切换显示与隐藏的功能。因此下面的ActivityIndicator元素中我们的animating属性是用state中的animating变量来控制的，其余的属性我们基本是默认的，size一小一大，很简单的例子。
-
-查看[我的博客](http://blog.csdn.net/Cloudox_/article/details/52440547)获取更多内容
